@@ -1,0 +1,19 @@
+{
+    "name": "vengi/routing",
+    "description": "A simple PHP Routing.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vengi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mauricio Utrera Molina"
+        }
+    ],
+    "require": {
+        "vengi/basic-functions-pack": ">=0.1.0"
+    }
+}
