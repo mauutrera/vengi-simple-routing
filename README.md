@@ -4,7 +4,7 @@ Vengi/Routing is a simple Routing System for PHP.
 ## Installation
 You can add this Library via composer.
 
-    composer require vengi/routing      // Routing Library.
+    composer require vengi/routing
 
 ## Usage
 Include the autoload.php:
