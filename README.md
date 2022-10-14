@@ -66,14 +66,14 @@ Example in monolithic application:
 #### HTML Forms
 
     Create Form:
-    <form action="/home/store" method="post">
+    <form action="<?php hostPath('/home/store') ?>" method="post">
         <?= csrf() ?>
         <input type="text" name="hello">
         <input type="submit" value="Send Data">
     </form>
 
     Update Form:
-    <form action="/home/update/?id=$id" method="post">
+    <form action="<?php hostPath('/home/update/?id='.$id) ?>" method="post">
         <?= csrf() ?>
         <input type="text" name="hello">
         <input type="submit" value="Send Data">
@@ -97,14 +97,14 @@ Example using the Vengi/Engine Library:
 #### HTML Forms
 
     Create Form:
-    <form action="/home/store" method="post">
+    <form action="{= hostPath('/home/store') }}" method="post">
         {= csrf() }}
         <input type="text" name="hello">
         <input type="submit" value="Send Data">
     </form>
 
     Update Form:
-    <form action="/home/update/?id=$id" method="post">
+    <form action="{= hostPath('/home/update/?id='.$id) }}" method="post">
         {= csrf() }}
         <input type="text" name="hello">
         <input type="submit" value="Send Data">
